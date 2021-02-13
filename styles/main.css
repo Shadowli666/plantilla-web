@@ -1,14 +1,21 @@
+body, html {
+	height: 100%;
+}
+body{
+	margin: 0;
+}
 *{
 	font-family: 'Raleway', sans-serif;
 }
 
+section{
+	margin-left: 15vw;
+	margin-right: 15vw;
+}
 h1,h2,h3,h4,h5,h6{
 	font-family: 'Montserrat', sans-serif;
 }
 
-body{
-	margin: 0;
-}
 
 a{
 	transition: 0.5s;
@@ -22,8 +29,21 @@ a:hover{
 	border-bottom-color: rgba(26,115,232,1);
 }
 
+form{
+	margin-block-end:0;
+}
+p,li,label{
+	font-size: 1.2em;
+}
+
+
+footer{
+	color: rgb(243 236 236);
+	background-color:rgb(23 24 28);
+}
 #page-title{
 	margin-left: 25px;
+	font-size: 2.4em;
 }
 
 .nav-item{
@@ -33,11 +53,11 @@ a:hover{
 	padding: 7px 14px 7px 14px;
 }
 .nav-link{
+	font-size: 1.1em;
 	transition: 0.5s;
 	color: inherit;
 	text-decoration: none;
 	text-align: center;
-	font-size:18px;
 }
 .nav-link:hover,
 .nav-link:focus{
@@ -54,47 +74,47 @@ a:hover{
 }
 .active:hover,
 .active:focus{
+	transform: translateY(-0.4em);
 	color: rgba(0,2,250,1);
 	border-bottom-color: rgba(0,2,250,1);
 }
-.main-container{ 
-	display: flex;
-	align-items: center;
-	width: 600px;
-	border:solid 1px rgb(0,0,0);
-	border-radius: 1em;
-	margin-bottom: 20px;
-	margin-top: 20px;
-	margin-left: 20px;
-	margin-right: 35px;
-
-	background-color: rgba(250,250,250,.4);
-}
-.main-content{
-	margin-left: 20px;
-	margin-right: 35px;
-}
+	
 .container{
 	display: flex;
 	align-items: center;
 }
-.content{
-	width: 500px;
-}
 
-section{
-	margin-left: 15vw;
-	margin-right: 15vw;
+
+.img-sm{
+	width: 40vw;
 }
 
 .img-md{
-	width: 45vw;
+	width: 63vw;
 }
 
-footer{
-	margin-top: 50px;
-	color: rgb(243 236 236);
-	background-color:rgb(23 24 28);
+.img-lg{
+	width: 73vw;
+
+}
+
+.social-media:hover{
+	border-bottom: none;
+}
+
+i{
+	color: white;
+}
+
+.social-media > i{
+	transition: 0.5s;
+	font-size: 1.8em;
+}
+
+.social-media > i:hover{
+	transform: translateY(-.2em);
+	color: rgba(26,115,232,1);
+	font-size: 2.2em;
 }
 
 .text-center{
@@ -102,17 +122,14 @@ footer{
 }
 
 #footer-logo{
-	width: 300px;
+	width: 200px;
 }
 
 #copyright{
-	width: 400px;
+	width: 200px;
 }
 
 #footer-logo,
 #copyright{
 	margin-left: 15px;
-}
-body, html {
-	height: 100%;
 }
