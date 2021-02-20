@@ -13,6 +13,7 @@
     <title>Kaijupedia</title>
 </head>
 <body>
+   <a href="#page-title" class="subir"></a> 
     <header class="container">
         <h1 id="page-title">Kaijupedia</h1>
         <nav class="nav nav-bar">
@@ -24,10 +25,13 @@
                     <a class="nav-link" href="#Godzilla">Godzilla</a>
                     </li
                     ><li class="nav-item">
-                        <a class="nav-link" href="products.html">Nuestros Productos</a>
+                        <a class="nav-link" href="products.html">Kaiju 2</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contacts.html">Contáctanos</a>
+                        <a class="nav-link" href="contacts.html">Kaiju 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacts">Contactos!</a>
                     </li>
                 </ul>
             </nav>
@@ -69,6 +73,7 @@
                 del cine japonés, y el más importante del subgénero
             kaijū, el que deriva del género tokusatsu.</p>
 
+            <img src="./assets/img/galaxy.jpg" class="img-md">
             <article>
                 <h3>Poderes y habilidades</h3>
                 <ul>
@@ -87,7 +92,6 @@
 
             </article>
 
-            <img src="./assets/img/galaxy.jpg" class="img-md">
         </div>
     </section>
     <section>
@@ -130,7 +134,8 @@
     <div class="form">
 
         <div id="form-title"><h2>Contacta con nosotros!</h2></div>
-        <form method="GET" action="contacts.php" class="form">
+        <p class="text-center">Ante cualquier sugerencia o error tambien puedes enviarnos tu correción</p>
+        <form method="POST" action="https://formspree.io/f/xgepbdkd" class="form" >
             <div class="row">
                 <label for="name">Nombre: </label>
                 <input type="text" name="nombre" id="name" required placeholder="Juan Luis">
@@ -144,7 +149,7 @@
                 <input type="email" name="correo" id="email" required placeholder="tucorreo@ejemplo.com">
             </div>
             <div class="row">
-                <textarea placeholder="Dinos algo!" id="mensaje"></textarea>
+                <textarea placeholder="Dinos algo!" id="message" name="mensaje"></textarea>
             </div>
             <input type="submit" value="Enviar!" id="send">
         </form>
@@ -166,7 +171,10 @@
     <div id="footer-logo">
         <a href="#"><img src="./assets/img/logo.png" alt="logo de la compañía" width="32" title="Tu logo aquí"></a>
         <a href="" class="social-media"><i class="fab fa-facebook" title="Facebook"></i></a>
+        <a href=""><i class="fas fa-chevron-circle-up"></i></a>
     </div>
 </footer>
+<div>
+</div>
 </body>
 </html>
