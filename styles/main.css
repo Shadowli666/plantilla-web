@@ -85,6 +85,31 @@ footer{
 	align-items: center;
 }
 
+.card-sm{
+	margin: auto;
+	margin-bottom: 100px;
+	width: 30%;
+	height: 120%;
+	border-radius: 0.6em;
+	box-shadow: 0.1em 0.1em .5em rgb(0 0 0);
+}
+
+.card-md{
+	margin: auto;
+	margin-bottom: 100px;
+	width: 45%;
+	border-radius: 0.6em;
+	box-shadow: 0.1em 0.1em .5em rgb(0 0 0);
+}
+
+.card-lg{
+	margin: auto;
+	margin-bottom: 100px;
+	width: 100%;
+	border-radius: 0.6em;
+	box-shadow: 0.1em 0.1em .5em rgb(0 0 0);
+}
+
 
 .img-sm{
 	width: 40vw;
@@ -105,49 +130,62 @@ footer{
 
 i{
 	color: white;
+	font-size: 3em
 }
 
 .social-media > i{
 	transition: 0.5s;
-	font-size: 1.8em;
+	font-size: 2.8em;
+	margin: .5em
 }
 
-.social-media > i:hover{
+.social-media > .fa-facebook:hover{
 	transform: translateY(-.2em);
 	color: rgba(26,115,232,1);
-	font-size: 2.2em;
+	font-size: 3em;
+}
+.social-media > .fa-whatsapp:hover{
+	transform: translateY(-.2em);
+	color: rgba(0,155,25,1);
+	font-size: 3em;
 }
 
 .text-center{
 	text-align: center;
 }
-
-#footer-logo{
-	width: 200px;
-}
-
-#copyright{
-	width: 200px;
-}
-
-#footer-logo,
-#copyright{
-	margin-left: 15px;
-}
-
 .subir{
-	transition: 0.5s;
+	font-size: 2.7em;
 	display: block;
 	border-radius: 50px;
-	background-color:rgb(23 24 28);
-	width: 45px;
-	height: 45px;
-	bottom: 45;
+	border-style: solid;
+	border-color: rgb(23 24 28);
+	background-color: rgb(23 24 28);
+	bottom: 120;
 	right: 45;
-	border:solid 3px white;
 	position: fixed;
 }
 
-.subir:hover{
-	transform: rotate(45deg);
+.frow{
+	display: flex;
+	align-items: center;
+}
+
+.fcol{
+	width: 33.33%
+}
+
+.fcol > ul > li{
+	list-style: none;
+}
+
+/*Responsive*/
+@media screen and (max-width: 500px){
+.social-media > i:hover{
+	transform: none;
+	font-size: 2.8em
+}
+
+.nav-bar{
+	text-align: right;
+}
 }

@@ -1,26 +1,19 @@
-.main-container{ 
-	display: flex;
-	align-items: center;
-	width: 100%;
-	border:solid 1px rgb(0,0,0);
-	border-radius: 1em;
-	margin: 10%;
-	background-color: rgba(0,0,0,.75);
-	color: white;
-}
-.main-content{
-	margin-left: 20px;
-	margin-right: 35px;
-}
 .parallax-container-1{
 	height: 100%;
-	background-image: url("../assets/img/parallax-1.jpg");
+	background-image: url("../assets/img/parallax-01.jpg");
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
+.parallax-logo{
+	background-color: black;
+	box-shadow: -.5em -.5em 5em white;
+	border-radius: 500px;
+	margin:auto;
+	margin-top: 10%
+}
 #contacts{
 	color: rgb(250, 250, 250);
 	background-color:rgb(23 24 28);
@@ -51,6 +44,9 @@
 }
 label{
 	display: inline-block;
+}
+textarea{
+	min-height: 200px;
 }
 
 #mensaje{
@@ -87,10 +83,11 @@ textarea:focus{
 
 input[type="submit"]{
 	transition: 0.25s;
+	border-radius: 5px;
 	background-color: inherit;
 	border-color: rgb(250,250,250);
 	color: 	rgb(250,250,250);
-	font-size: 1em;
+	font-size: 1.3em;
 	padding: 6px;
 }
 input[type="submit"]:hover,
