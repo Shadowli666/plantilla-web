@@ -100,14 +100,14 @@
                 </div>
 
                 <div class="card-md">
-                    <h3 class="text-center">Papelería</h3>
-                   <img src="./assets/img/camisa.jpg" class="img-fixed">
+                    <h3 class="text-center">Y más...</h3>
+                    <img src="./assets/img/camisa.jpg" class="img-fixed">
                     <ul>
-                        <li>Talonarios</li>
-                        <li>Volantes</li>
-                        <li>Facturas</li>
-                        <li>Recibos</li>
-                        <li>Forma Libre</li>
+                        <li>Chapas</li>
+                        <li>Stickers</li>
+                        <li>Camisas Personalizadas</li>
+                        <li>Uniformes</li>
+                        <li>Material POP</li>
                     </ul>
                 </div>
             </div>
@@ -126,7 +126,7 @@
                         <li>INVERSIONES Y VARIEDADES DOÑA EDITH C.A.</li>
                     </ul>
                 </div>
-                 <div class="card-sm">
+                <div class="card-sm">
                     <ul>
                         <li>HIDROMATICOS LA OFERTA,C.A.</li>
                         <li>DISTRIBUIDORA OSMEIBER,C.A.</li>
@@ -153,7 +153,7 @@
             <div class="form">
                 <div id="form-title"><h2>Contacta con nosotros!</h2></div>
                 <p class="text-center">Para Contactos y Presupuestos</p>
-                <form method="POST" action="https://formspree.io/f/xgepbdkd" class="form" >
+                <form method="POST" action="https://formspree.io/f/xgepbdkd" class="form">
                     <div class="row">
                         <label for="name">Nombre: </label>
                         <input type="text" name="nombre" id="name" required placeholder="Juan Luis">
@@ -174,6 +174,9 @@
             </div>
         </section>
         <footer>
+            <div style="text-align: center; height: 1.6em; font-size: 24px">
+                <a href="./index-bootstrap.html"><span class="fadeeffect">>  >  > Cambiar a Bootstrap <  <  <</span></a>
+            </div>
             <div class="frow">
                 <div class="fcol">
                     <div id="copyright">
@@ -192,13 +195,24 @@
                     <div id="footer-logo">
                         <a href="https://www.facebook.com/FM-Publicidad-114290130699619" class="social-media"><i class="fab fa-facebook" title="Facebook"></i></a>
                         <a href="" class="social-media"><i class="fab fa-whatsapp" title="Whatsapp"></i></a>
-                        <a class="social-media"><i class="fab fa-instagram" title="Whatsapp"></i></a>
-                        <a class="social-media"><i class="fab fa-telegram" title="Whatsapp"></i></a>
+                        <a class="social-media"><i class="fab fa-instagram" title="Instagram"></i></a>
+                        <a class="social-media"><i class="fab fa-telegram" title="Telegram"></i></a>
                     </div>
                 </div>
             </div>
-        </footer>
-        <div>
-        </div>
+        </footer>   
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function() {
+                $(function () {
+                    alert("La página ha terminado de cargar!\nEsta alerta fue generada por JQuery");
+                    var $element = $('.fadeeffect');
+                    setInterval(function () {
+                        $element.fadeIn(1000).delay(1000).fadeOut(1500).delay(1000).fadeIn(1500);
+                    }, 3000);
+                });
+            });
+        </script>
     </body>
+
     </html>
